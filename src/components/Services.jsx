@@ -81,7 +81,7 @@ const Services = () => {
         variants={variants}
       >
         <motion.div
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
+          className=" p-5 border border-gray-400 flex flex-col items-center gap-2 md:min-h-[220px]"
           whileHover={{ background: "lightgray", color: "black" }}
         >
           <h2>Web development</h2>
@@ -92,7 +92,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
+          className=" p-5 border border-gray-400 flex flex-col items-center gap-2  md:min-h-[220px]"
         >
           <h2>SEO and hosting</h2>
           <p>
@@ -103,7 +103,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
+          className=" p-5 border border-gray-400 flex flex-col items-center gap-2 md:min-h-[220px]"
         >
           <h2>Digital marketing & Branding</h2>
           <p>
@@ -113,7 +113,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
+          className=" p-5 border border-gray-400 flex flex-col items-center gap-2 md:min-h-[220px]"
         >
           <h2>Pharceutical care</h2>
           <p>
