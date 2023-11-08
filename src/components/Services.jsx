@@ -3,8 +3,8 @@ import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
-    x: -500,
-    y: 100,
+    x: -50,
+    y: 50,
     opacity: 0,
   },
   animate: {
@@ -36,7 +36,7 @@ const Services = () => {
         className="basis-1/4 self-end flex items-center gap-5 "
         variants={variants}
       >
-        <p className=" font-medium text-gray-500">
+        <p className=" font-medium text-gray-500 mr-2 lg:mr-0">
           I focus on helping your brand grow <br /> and move forward
         </p>
         <hr className="hidden lg:inline-flex lg:w-96  lg:border-t-4 lg:border-gray-700" />
@@ -49,9 +49,9 @@ const Services = () => {
           <img
             src="/people.webp"
             alt=""
-            className=" w-64 h-16 rounded-full object-cover"
+            className=" lg:w-64 lg:h-16 w-32 h-10 rounded-full object-cover"
           />
-          <h1 className=" lg:text-6xl">
+          <h1 className=" lg:text-6xl text-2xl">
             <motion.span
               whileHover={{ color: "orange" }}
               className=" font-bold"
@@ -62,7 +62,7 @@ const Services = () => {
           </h1>
         </div>
         <div className=" flex items-center gap-5">
-          <h1 className=" lg:text-6xl">
+          <h1 className=" lg:text-6xl text-2xl">
             <motion.span
               className=" font-bold"
               whileHover={{ color: "orange" }}
@@ -71,54 +71,55 @@ const Services = () => {
             </motion.span>{" "}
             business.
           </h1>
-          <button className=" font-medium px-7 py-3 text-black rounded-3xl bg-orange-400 border-none cursor-pointer text-lg">
+          <button className=" font-medium lg:px-7 lg:py-3 px-4 py-2 text-black rounded-3xl bg-orange-400 border-none cursor-pointer text-lg">
             what we do
           </button>
         </div>
       </motion.div>
       <motion.div
-        className=" basis-2/4 flex flex-col lg:flex-row items-center max-w-4xl m-auto "
+        className=" basis-2/4 flex flex-col lg:flex-row items-center max-w-4xl m-auto px-7 lg:px-0 "
         variants={variants}
       >
         <motion.div
           className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Web development</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, atque.
+            I craft beautiful and fully functional website for my clients using
+            standard industry practice.
           </p>
-          <button>go</button>
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
         >
-          <h2>Branding</h2>
+          <h2>SEO and hosting</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, atque.
+            I develop search engine optimized web application that make your
+            website stand out in the crowd while also putting the site in cloud
+            using the best hosting platforms.
           </p>
-          <button>go</button>
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
         >
-          <h2>Branding</h2>
+          <h2>Digital marketing & Branding</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, atque.
+            I am a digital marketer and I help your products and services reach
+            a larger audience by using digital tools
           </p>
-          <button>go</button>
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className=" p-5 border border-gray-400 flex flex-col items-center gap-2"
         >
-          <h2>Branding</h2>
+          <h2>Pharceutical care</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, atque.
+            As a trained and licensed pharmacist, I provide pharmaceutical care
+            and medication therapy management.
           </p>
-          <button>go</button>
         </motion.div>
       </motion.div>
     </motion.div>

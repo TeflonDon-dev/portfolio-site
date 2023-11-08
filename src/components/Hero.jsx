@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { MdDownloadForOffline, MdOutlineEmail } from "react-icons/md";
 const textVariants = {
   initial: {
     x: -500,
@@ -44,32 +44,45 @@ const Hero = () => {
       style={{ background: "linear-gradient(180deg, #0c0c1d, #111132)" }}
     >
       <motion.div
-        className=" basis-1/2  self-center lg:ml-5"
+        className=" basis-1/2 self-center"
         variants={textVariants}
         initial="initial"
         animate="animate"
       >
         <motion.h2
-          className=" lg:text-2xl text-purple-800"
+          className=" lg:text-3xl text-lg text-purple-800"
           variants={textVariants}
         >
           JOSHUA OKORIE
         </motion.h2>
-        <motion.h2 className=" lg:text-7xl my-5" variants={textVariants}>
+        <motion.h2
+          className=" text-3xl lg:text-7xl my-5"
+          variants={textVariants}
+        >
           MERN DEVELOPER
         </motion.h2>
         <div className=" mb-5">
           <motion.button
-            className=" p-3 lg:p-4 border border-white bg-transparent text-white mr-5 cursor-pointer font-medium rounded-md"
+            className=" p-2 lg:p-3 border border-white bg-transparent text-white mr-5 cursor-pointer font-medium rounded-md"
             variants={textVariants}
           >
-            see the latest works
+            <p className=" flex items-center gap-2">
+              <span>
+                <MdDownloadForOffline className=" w-5 h-5" />
+              </span>{" "}
+              Resume
+            </p>
           </motion.button>
           <motion.button
-            className=" p-3 lg:p-4 border border-white bg-transparent text-white mr-5 cursor-pointer font-medium rounded-md"
+            className=" p-2 lg:p-3 border border-white bg-transparent text-white mr-5 cursor-pointer font-medium rounded-md"
             variants={textVariants}
           >
-            contact me
+            <p className=" flex items-center gap-2">
+              <span>
+                <MdOutlineEmail className=" w-5 h-5" />
+              </span>{" "}
+              contact me
+            </p>
           </motion.button>
         </div>
         <motion.img
@@ -87,8 +100,8 @@ const Hero = () => {
       >
         web developer public health advocate pharmacist
       </motion.div>
-      <div className=" basis-1/2 h-full w-full flex justify-center">
-        <img src="/joshua.jpg" alt="" className=" w-96" />
+      <div className=" basis-1/2 h-full w-full flex justify-center pb-16">
+        <img src="/joshua.jpg" alt="" className=" w-96 rounded-lg" />
       </div>
     </div>
   );
