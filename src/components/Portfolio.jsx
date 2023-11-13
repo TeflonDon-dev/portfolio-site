@@ -41,7 +41,7 @@ const Portfolio = () => {
     const { scrollYProgress } = useScroll({
       target: ref,
     });
-    const y = useTransform(scrollYProgress, [0, 1], [-100, 200]);
+    const y = useTransform(scrollYProgress, [0, 1], [-150, 200]);
     return (
       <section>
         <div className=" flex items-center justify-center w-full h-full overflow-hidden">
@@ -54,7 +54,10 @@ const Portfolio = () => {
               />
             </div>
 
-            <motion.div className=" flex-1 flex flex-col gap-5" style={{ y }}>
+            <motion.div
+              className=" flex-1 flex flex-col gap-5 p-5"
+              style={{ y }}
+            >
               <h2 className=" text-xl">{item.title}</h2>
               <p className=" text-lg text-gray-500">{item.description}</p>
               <button className=" bg-orange-500 border-none rounded-md cursor-pointer px-4 py-2 w-2/5 text-black">
@@ -68,7 +71,7 @@ const Portfolio = () => {
   };
   return (
     <div className=" relative -z-10" ref={ref}>
-      <div className=" sticky top-0 left-0 pt-12 text-center text-orange-500 text-3xl">
+      <div className=" sticky top-0 left-0 pt-12 text-center text-orange-500 text-xl md:text-4xl font-bold">
         <h1>Featured works</h1>
         <motion.div
           className=" h-3 bg-white"
