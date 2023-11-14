@@ -19,10 +19,10 @@ const Navbar = () => {
           Teflon Dev
         </motion.span>
         <div className="flex gap-5 ml-auto lg:ml-0">
-          <a href="#">
+          <a href="https://twitter.com/joshuaokorie008">
             <FaXTwitter />
           </a>
-          <a href="#">
+          <a href="https://github.com/TeflonDon-dev">
             <BsGithub />
           </a>
           <a href="#">

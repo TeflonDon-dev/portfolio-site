@@ -20,6 +20,7 @@ const Portfolio = () => {
       img: "/x-log.png",
       description:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eligendi, dolor, eveniet reiciendis natus eos quos delectus nihil dignissimos odit fugiat, corrupti sed. Sed recusandae ex doloremque commodi, perspiciatis veniam?",
+      link: "x-log-frontend.vercel.app",
     },
     {
       id: 2,
@@ -27,6 +28,7 @@ const Portfolio = () => {
       img: "/OPay.png",
       description:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eligendi, dolor, eveniet reiciendis natus eos quos delectus nihil dignissimos odit fugiat, corrupti sed. Sed recusandae ex doloremque commodi, perspiciatis veniam?",
+      link: "o-pay-business-clone.vercel.app",
     },
     {
       id: 3,
@@ -34,6 +36,7 @@ const Portfolio = () => {
       img: "/getLinked.png",
       description:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eligendi, dolor, eveniet reiciendis natus eos quos delectus nihil dignissimos odit fugiat, corrupti sed. Sed recusandae ex doloremque commodi, perspiciatis veniam?",
+      link: "mern-5-get-linked.vercel.app",
     },
   ];
   const Single = ({ item }) => {
@@ -61,7 +64,7 @@ const Portfolio = () => {
               <h2 className=" text-xl">{item.title}</h2>
               <p className=" text-lg text-gray-500">{item.description}</p>
               <button className=" bg-orange-500 border-none rounded-md cursor-pointer px-4 py-2 w-2/5 text-black">
-                See Demo
+                <a href={item.link}> See Demo</a>
               </button>
             </motion.div>
           </div>

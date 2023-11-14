@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import ClipLoader from "react-spinners/ClipLoader";
 const variants = {
   initial: {
     y: 50,
@@ -21,11 +22,13 @@ const Contact = () => {
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const isInView = useInView(ref, { margin: "-100px" });
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -37,16 +40,18 @@ const Contact = () => {
       .then(
         (result) => {
           setSuccess(true);
+          setLoading(false);
         },
         (error) => {
           setError(true);
+          setLoading(false);
         }
       );
   };
   return (
     <motion.div
       ref={ref}
-      className=" h-full max-w-5xl m-auto flex flex-col md:flex-row items-center md:gap-14"
+      className=" h-full lg:max-w-5xl m-auto flex flex-col lg:flex-row items-center lg:gap-14"
       variants={variants}
       initial="initial"
       whileInView="animate"
@@ -71,9 +76,9 @@ const Contact = () => {
           <span className=" font-medium">08148429444</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative">
+      <div className=" flex-1 relative ">
         <motion.div
-          className=" stroke-orange-500 absolute m-auto -z-10"
+          className=" stroke-orange-500 absolute -z-10 "
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{
@@ -82,7 +87,7 @@ const Contact = () => {
           }}
         >
           <svg
-            className=" w-64 h-64 md:h-[450px] md:w-[450px]"
+            className=" w-64 h-64 md:h-[450px] md:w-[450px] mx-auto "
             viewBox="0 0 32.666 32.666"
           >
             <motion.path
@@ -139,8 +144,20 @@ const Contact = () => {
             className=" p-5 bg-transparent border rounded-md"
             name="message"
           />
-          <button className=" p-5 cursor-pointer border-none font-medium bg-orange-500 text-black ">
-            Send
+          <button
+            className=" p-5 cursor-pointer border-none font-medium bg-orange-500 text-black flex justify-center items-center"
+            disabled={loading}
+          >
+            {loading ? (
+              <ClipLoader
+                color="black"
+                size={25}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            ) : (
+              "send"
+            )}
           </button>
           {error && "Error"}
           {success && "success"}
