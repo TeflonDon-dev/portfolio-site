@@ -81,21 +81,25 @@ const Services = () => {
         variants={variants}
       >
         <motion.div
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2 md:min-h-[220px]"
+          className=" p-5 border border-gray-400 flex flex-col items-center justify-center gap-5 md:min-h-[250px]"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Web development</h2>
-          <p>
+          <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
+            Web development
+          </h2>
+          <p className=" text-center text-sm">
             I craft beautiful and fully functional website for my clients using
             standard industry practice.
           </p>
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2  md:min-h-[220px]"
+          className=" p-5 border border-gray-400 flex flex-col items-center justify-center gap-5  md:min-h-[250px]"
         >
-          <h2>SEO and hosting</h2>
-          <p>
+          <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
+            SEO and cloud hosting
+          </h2>
+          <p className=" text-center text-sm">
             I develop search engine optimized web application that make your
             website stand out in the crowd while also putting the site in cloud
             using the best hosting platforms.
@@ -103,20 +107,24 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2 md:min-h-[220px]"
+          className=" p-5 border border-gray-400 flex flex-col items-center justify-center gap-5 md:min-h-[250px]"
         >
-          <h2>Digital marketing & Branding</h2>
-          <p>
+          <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
+            Digital marketing & Branding
+          </h2>
+          <p className=" text-center text-sm">
             I am a digital marketer and I help your products and services reach
             a larger audience by using digital tools
           </p>
         </motion.div>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
-          className=" p-5 border border-gray-400 flex flex-col items-center gap-2 md:min-h-[220px]"
+          className=" p-5 border border-gray-400 flex flex-col items-center justify-center gap-5 md:min-h-[250px]"
         >
-          <h2>Pharceutical care</h2>
-          <p>
+          <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
+            Pharmaceutical care
+          </h2>
+          <p className=" text-center text-sm">
             As a trained and licensed pharmacist, I provide pharmaceutical care
             and medication therapy management.
           </p>

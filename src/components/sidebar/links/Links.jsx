@@ -26,7 +26,7 @@ const itemsVariants = {
 };
 
 const Links = () => {
-  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact"];
   return (
     <motion.div
       className=" absolute w-full h-full flex flex-col items-center justify-center gap-5 "
@@ -39,7 +39,7 @@ const Links = () => {
           variants={itemsVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className=" text-4xl "
+          className=" text-4xl"
         >
           {item}
         </motion.a>

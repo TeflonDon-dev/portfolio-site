@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import ClipLoader from "react-spinners/ClipLoader";
+import toast from "react-hot-toast";
 const variants = {
   initial: {
     y: 50,
@@ -41,17 +42,19 @@ const Contact = () => {
         (result) => {
           setSuccess(true);
           setLoading(false);
+          toast.success("message sent!");
         },
         (error) => {
           setError(true);
           setLoading(false);
+          toast.error("message not sent!");
         }
       );
   };
   return (
     <motion.div
       ref={ref}
-      className=" h-full lg:max-w-5xl m-auto flex flex-col lg:flex-row items-center lg:gap-14"
+      className=" h-full lg:max-w-5xl w-full m-auto flex flex-col lg:flex-row items-center lg:gap-14 pt-10 lg:pt-0"
       variants={variants}
       initial="initial"
       whileInView="animate"
@@ -64,21 +67,21 @@ const Contact = () => {
           Let's work together
         </motion.h1>
         <motion.div className="" variants={variants}>
-          <h2>Mail</h2>
+          <h2 className=" text-orange-500">Mail</h2>
           <span className=" font-medium">joshuaokorie008@gmail.com</span>
         </motion.div>
         <motion.div className="" variants={variants}>
-          <h2>Address</h2>
+          <h2 className=" text-orange-500">Address</h2>
           <span className=" font-medium">Wulari-Jerusalem, Maiduguri</span>
         </motion.div>
         <motion.div className="" variants={variants}>
-          <h2>Phone</h2>
+          <h2 className=" text-orange-500">Phone</h2>
           <span className=" font-medium">08148429444</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative ">
+      <div className=" flex-1 relative  w-3/4">
         <motion.div
-          className=" stroke-orange-500 absolute -z-10 "
+          className=" stroke-orange-500 absolute -z-10 w-full mx-auto"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{
@@ -115,7 +118,7 @@ const Contact = () => {
         <motion.form
           ref={formRef}
           onSubmit={sendEmail}
-          className="flex flex-col gap-5"
+          className="flex flex-col gap-5 "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{
@@ -159,8 +162,6 @@ const Contact = () => {
               "send"
             )}
           </button>
-          {error && "Error"}
-          {success && "success"}
         </motion.form>
       </div>
     </motion.div>

@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="https://github.com/TeflonDon-dev">
             <BsGithub />
           </a>
-          <a href="#">
+          <a href="https://instagram.com/okorie41?igshid=MzNlNGNkZWQ4Mg==">
             <BsInstagram />
           </a>
         </div>

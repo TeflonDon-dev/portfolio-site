@@ -19,24 +19,24 @@ const Portfolio = () => {
       title: "e-pharmacy website",
       img: "/x-log.png",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eligendi, dolor, eveniet reiciendis natus eos quos delectus nihil dignissimos odit fugiat, corrupti sed. Sed recusandae ex doloremque commodi, perspiciatis veniam?",
-      link: "x-log-frontend.vercel.app",
+        "This is an e-pharmacy outlet that offers quick and effective purchase of essential medications. Stack used include: HTML5, CSS3, tailwind CSS, react, mongoDB, Redux toolkit",
+      link: "https://x-log-frontend.vercel.app",
     },
     {
       id: 2,
       title: "OPay clone",
       img: "/OPay.png",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eligendi, dolor, eveniet reiciendis natus eos quos delectus nihil dignissimos odit fugiat, corrupti sed. Sed recusandae ex doloremque commodi, perspiciatis veniam?",
-      link: "o-pay-business-clone.vercel.app",
+        "An OPay business clone built using HTML5, CSS3, tailwind CSS, react, framer-motion, Redux toolkit",
+      link: "https://o-pay-business-clone.vercel.app/",
     },
     {
       id: 3,
       title: "getLinked web app",
       img: "/getLinked.png",
       description:
-        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum eligendi, dolor, eveniet reiciendis natus eos quos delectus nihil dignissimos odit fugiat, corrupti sed. Sed recusandae ex doloremque commodi, perspiciatis veniam?",
-      link: "mern-5-get-linked.vercel.app",
+        " A hackathon challenge I participated in. Stack used include: HTML5, CSS3, tailwind CSS, react, Redux toolkit ",
+      link: "https://mern-5-get-linked.vercel.app",
     },
   ];
   const Single = ({ item }) => {
@@ -73,11 +73,11 @@ const Portfolio = () => {
     );
   };
   return (
-    <div className=" relative -z-10" ref={ref}>
+    <div className=" relative z-10" ref={ref}>
       <div className=" sticky top-0 left-0 pt-12 text-center text-orange-500 text-xl md:text-4xl font-bold">
         <h1>Featured works</h1>
         <motion.div
-          className=" h-3 bg-white"
+          className=" h-2 bg-white"
           style={{ scaleX: scaleX }}
         ></motion.div>
       </div>
