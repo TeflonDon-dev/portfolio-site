@@ -39,7 +39,7 @@ const Links = () => {
           variants={itemsVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className=" text-4xl"
+          className=" text-2xl lg:text-4xl"
         >
           {item}
         </motion.a>

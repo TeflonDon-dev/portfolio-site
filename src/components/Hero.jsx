@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="relative flex flex-col lg:flex-row items-center gap-10 justify-center h-[calc(100vh-50px)] mt-20 lg:mt-0 z-20"
+        className="relative flex flex-col lg:flex-row items-center gap-10 justify-center h-[calc(100vh-50px)] mt-32 lg:mt-0 z-20"
         style={{ background: "linear-gradient(180deg, #0c0c1d, #111132)" }}
       >
         <motion.div
@@ -101,7 +101,7 @@ const Hero = () => {
         >
           web developer public health advocate pharmacist
         </motion.div>
-        <div className=" basis-1/2 h-full w-full flex justify-center pb-16">
+        <div className=" basis-1/2 h-full w-full flex justify-center p-5 lg:p-0 lg:pb-16">
           <img src="/joshua.jpg" alt="" className=" w-96 rounded-lg" />
         </div>
       </div>
