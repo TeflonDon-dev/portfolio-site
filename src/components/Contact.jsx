@@ -54,14 +54,17 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className=" h-full lg:max-w-5xl w-full m-auto flex flex-col lg:flex-row items-center lg:gap-14 pt-10 lg:pt-0"
+      className=" h-full lg:max-w-5xl w-full m-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-14 pt-10 lg:pt-0 pb-10 lg:pb-0"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className=" flex-1 flex flex-col gap-10" variants={variants}>
+      <motion.div
+        className=" flex-1 flex flex-col gap-5 lg:gap-10"
+        variants={variants}
+      >
         <motion.h1
-          className=" text-xl md:text-7xl leading-10 "
+          className=" text-xl md:text-7xl lg:leading-10 ml-2 lg:ml-0"
           variants={variants}
         >
           Let's work together
@@ -79,7 +82,7 @@ const Contact = () => {
           <span className=" font-medium">08148429444</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative  w-3/4">
+      <div className=" flex-1 relative py-5 lg:py-0  w-3/4">
         <motion.div
           className=" stroke-orange-500 absolute -z-10 w-full mx-auto"
           initial={{ opacity: 1 }}
