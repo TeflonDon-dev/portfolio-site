@@ -12,7 +12,7 @@ const Cursor = () => {
       window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
-  console.log(position);
+
   return (
     <motion.div
       className=" h-8 w-8 rounded-full border border-white fixed z-50"

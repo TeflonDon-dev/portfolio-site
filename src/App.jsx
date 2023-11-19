@@ -7,10 +7,12 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Cursor from "./components/Cursor";
 import { Toaster } from "react-hot-toast";
+import Loader from "./components/Loader";
 
 const App = () => {
   return (
     <div className="">
+      <Loader />
       <Toaster />
       <Cursor />
       <section id="Homepage">

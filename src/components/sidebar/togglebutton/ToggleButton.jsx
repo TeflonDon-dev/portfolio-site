@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ToggleButton = ({ setOpen }) => {
   return (
     <button
-      className=" z-50 w-12 h-12 rounded-full fixed top-7 left-10  bg-transparent border-none cursor-pointer"
+      className=" z-30 w-12 h-12 rounded-full fixed top-7 left-10  bg-transparent border-none cursor-pointer"
       onClick={() => setOpen((prevState) => !prevState)}
     >
       {" "}

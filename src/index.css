@@ -17,3 +17,30 @@ section {
   scroll-snap-align: center;
   overflow: hidden;
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 50;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeOut;
+  animation-duration: 0.3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}

@@ -82,7 +82,7 @@ const Contact = () => {
           <span className=" font-medium">08148429444</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative py-8 lg:py-0  w-3/4">
+      <div className=" flex-1 relative py-12 lg:py-0  w-3/4">
         <motion.div
           className=" stroke-orange-500 absolute -z-10 w-full mx-auto"
           initial={{ opacity: 1 }}
