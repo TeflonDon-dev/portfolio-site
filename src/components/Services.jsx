@@ -41,47 +41,13 @@ const Services = () => {
         </p>
         <hr className="hidden lg:inline-flex lg:w-96  lg:border-t-4 lg:border-gray-700" />
       </motion.div>
-      <motion.div
-        className="  flex flex-col items-center justify-center gap-5"
-        variants={variants}
-      >
-        <div className=" flex items-center gap-5">
-          <img
-            src="/people.webp"
-            alt=""
-            className=" lg:w-64 lg:h-16 w-32 h-10 rounded-full object-cover"
-          />
-          <h1 className=" lg:text-4xl text-2xl">
-            <motion.span
-              whileHover={{ color: "orange" }}
-              className=" font-bold"
-            >
-              Unique
-            </motion.span>{" "}
-            Ideas
-          </h1>
-        </div>
-        <div className=" flex items-center gap-5">
-          <h1 className=" lg:text-4xl text-2xl">
-            <motion.span
-              className=" font-bold"
-              whileHover={{ color: "orange" }}
-            >
-              For your
-            </motion.span>{" "}
-            business.
-          </h1>
-          <button className=" font-medium lg:px-7 lg:py-3 px-4 py-2 text-black rounded-3xl bg-orange-400 border-none cursor-pointer text-lg">
-            what we do
-          </button>
-        </div>
-      </motion.div>
+
       <motion.div
         className="flex-1 flex flex-col lg:flex-row items-center max-w-4xl m-auto px-7 lg:px-0 "
         variants={variants}
       >
         <motion.div
-          className="p-3 lg:p-5 border border-gray-400 flex flex-col items-center  gap-3 lg:gap-5 md:min-h-[250px]"
+          className="p-3 lg:p-5 border border-gray-400 flex flex-col items-center justify-center gap-3 lg:gap-5 md:min-h-[250px]"
           whileHover={{ background: "white", color: "black" }}
         >
           <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
@@ -94,7 +60,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "white", color: "black" }}
-          className=" p-3 lg:p-5 border border-gray-400 flex flex-col items-center  gap-3 lg:gap-5  md:min-h-[250px]"
+          className=" p-3 lg:p-5 border border-gray-400 flex flex-col items-center justify-center gap-3 lg:gap-5  md:min-h-[250px]"
         >
           <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
             SEO and cloud hosting
@@ -107,7 +73,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "white", color: "black" }}
-          className=" p-3 lg:p-5 border border-gray-400 flex flex-col items-center gap-3 lg:gap-5 md:min-h-[250px]"
+          className=" p-3 lg:p-5 border border-gray-400 flex flex-col items-center justify-center gap-3 lg:gap-5 md:min-h-[250px]"
         >
           <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
             Digital marketing & Branding
@@ -119,7 +85,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           whileHover={{ background: "white", color: "black" }}
-          className=" p-3 lg:p-5 border border-gray-400 flex flex-col items-center  gap-3 lg:gap-5 md:min-h-[250px]"
+          className=" p-3 lg:p-5 border border-gray-400 flex flex-col items-center justify-center gap-3 lg:gap-5 md:min-h-[250px]"
         >
           <h2 className=" text-orange-400 text-lg lg:text-xl text-center font-medium">
             Pharmaceutical care

@@ -47,7 +47,7 @@ const Portfolio = () => {
     const y = useTransform(scrollYProgress, [0, 1], [-150, 200]);
     return (
       <section>
-        <div className=" flex items-center justify-center w-full h-full overflow-hidden mt-20 ">
+        <div className=" flex items-center justify-center w-full h-full overflow-hidden mt-20 lg:mt-0">
           <div className=" max-w-5xl  md:h-full mx-auto flex flex-col md:flex-row gap-32 md:gap-10 items-center justify-center">
             <div className="flex-1 h-1/2" ref={ref}>
               <img

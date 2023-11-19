@@ -64,7 +64,7 @@ const Contact = () => {
         variants={variants}
       >
         <motion.h1
-          className=" text-xl md:text-7xl lg:leading-10 ml-2 lg:ml-0"
+          className=" text-xl md:text-7xl  ml-2 lg:ml-0"
           variants={variants}
         >
           Let's work together
@@ -82,7 +82,7 @@ const Contact = () => {
           <span className=" font-medium">08148429444</span>
         </motion.div>
       </motion.div>
-      <div className=" flex-1 relative py-5 lg:py-0  w-3/4">
+      <div className=" flex-1 relative py-8 lg:py-0  w-3/4">
         <motion.div
           className=" stroke-orange-500 absolute -z-10 w-full mx-auto"
           initial={{ opacity: 1 }}
